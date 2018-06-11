@@ -7,6 +7,7 @@ import Interpolate from './interpolate';
 import Sequence from "./sequence";
 import Parallel from './parallel';
 import Stagger from './stagger';
+import Loop from "./loop";
 
 export const selectorComponent = Component => {
      switch(Component) {
@@ -22,6 +23,8 @@ export const selectorComponent = Component => {
             return <Parallel/>
         case 'Stagger':
             return <Stagger/>
+        case 'Loop':
+            return <Loop/>
 
         default: return <Text>Something went wrong</Text>
      }
