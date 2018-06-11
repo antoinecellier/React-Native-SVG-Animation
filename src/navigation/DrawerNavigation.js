@@ -5,6 +5,8 @@ import { createDrawerNavigator } from 'react-navigation';
 import SvgComponents from '../screens/SvgComponents.screen';
 import Home from '../screens/Home.screen';
 import Animation from '../screens/Animation.screen';
+import GradientText from '../screens/GradientText.screen';
+import SvgAnimation  from '../screens/SvgAnimation.screen'
 
 
 const navigatorConfig = {
@@ -36,4 +38,20 @@ export const DrawerNavigation = createDrawerNavigator({
             drawerLabel: 'Animation'
         },
     },
+    GradientText: {
+        screen: GradientText,
+        navigationOptions: {
+            title: 'Gradient Text',
+            headerTitle: 'Gradient Text',
+            drawerLabel: 'Gradient Text'
+        },
+    },
+    SvgAnimation: {
+        screen: SvgAnimation,
+        navigationOptions: {
+            title: 'Animated SVG',
+            headerTitle: 'Animated SVG',
+            drawerLabel: 'Animated SVG'
+        },
+    }
 },navigatorConfig);
