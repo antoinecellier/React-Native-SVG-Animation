@@ -4,8 +4,7 @@ import { createDrawerNavigator } from 'react-navigation';
 //components
 import SvgComponents from '../screens/SvgComponents.screen';
 import Home from '../screens/Home.screen';
-
-import {SVGStack} from './StackNavigation';
+import Animation from '../screens/Animation.screen';
 
 
 const navigatorConfig = {
@@ -27,6 +26,14 @@ export const DrawerNavigation = createDrawerNavigator({
             title: 'SVG',
             headerTitle: 'SVG',
             drawerLabel: 'SVG'
+        },
+    },
+    Animation: {
+        screen: Animation,
+        navigationOptions: {
+            title: 'Animation',
+            headerTitle: 'Animation',
+            drawerLabel: 'Animation'
         },
     },
 },navigatorConfig);

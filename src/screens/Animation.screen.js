@@ -4,24 +4,16 @@ import { Feather } from '@expo/vector-icons';
 
 const { width, height } = Dimensions.get('window');
 import ScreenTemplate from '../components/ScreenTemplate';
-import {selectorComponent} from '../components/svgExamples';
+import {selectorComponent} from '../components/animationExample';
 
-class SvgComponents extends React.Component {
+class Animation extends React.Component {
 
   state = {
     show: false
   }
   
   list = [
-    {name: 'Circle'},
-    {name: 'Rectangle'},
-    {name: 'Line'},
-    {name: 'Polygon'},
-    {name: 'Polyline'},
-    {name: 'Path'},
-    {name: 'Text'},
-    {name: 'G'},
-    {name: 'Def/Use'},
+    {name: 'timing'},
   ]
 
   renderModal = () => {
@@ -49,7 +41,7 @@ class SvgComponents extends React.Component {
 
   render() {
     return <View style={styles.container}>
-        <ScreenTemplate navigation={this.props.navigation} title={'SVG Components'}>
+        <ScreenTemplate navigation={this.props.navigation} title={'Animation'}>
           <FlatList
               data={this.list}
               renderItem={ (item) =>this.renderRows(item)}
@@ -69,4 +61,4 @@ const styles = StyleSheet.create({
       width: width
   },
 });
-export default SvgComponents;
+export default Animation;
