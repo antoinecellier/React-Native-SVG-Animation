@@ -13,7 +13,12 @@ class Animation extends React.Component {
   }
   
   list = [
-    {name: 'timing'},
+    {name: 'Timing'},
+    {name: 'Spring'},
+    {name: 'Interpolate'},
+    {name: 'Sequence & Delay'},
+    {name: 'Parallel'},
+    {name: 'Stagger'},
   ]
 
   renderModal = () => {

@@ -12,6 +12,14 @@ const navigatorConfig = {
 }
 
 export const DrawerNavigation = createDrawerNavigator({
+    Animation: {
+        screen: Animation,
+        navigationOptions: {
+            title: 'Animation',
+            headerTitle: 'Animation',
+            drawerLabel: 'Animation'
+        },
+    },
     Home: {
         screen: Home,
         navigationOptions: {
@@ -28,12 +36,12 @@ export const DrawerNavigation = createDrawerNavigator({
             drawerLabel: 'SVG'
         },
     },
-    Animation: {
-        screen: Animation,
-        navigationOptions: {
-            title: 'Animation',
-            headerTitle: 'Animation',
-            drawerLabel: 'Animation'
-        },
-    },
+    // Animation: {
+    //     screen: Animation,
+    //     navigationOptions: {
+    //         title: 'Animation',
+    //         headerTitle: 'Animation',
+    //         drawerLabel: 'Animation'
+    //     },
+    // },
 },navigatorConfig);
