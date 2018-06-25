@@ -19,7 +19,8 @@ class Animation extends React.Component {
     {name: 'Sequence & Delay'},
     {name: 'Parallel'},
     {name: 'Stagger'},
-    {name: 'Loop'}
+    {name: 'Loop'},
+    {name: 'Burger'}
   ]
 
   renderModal = () => {

@@ -8,6 +8,7 @@ import Sequence from "./sequence";
 import Parallel from './parallel';
 import Stagger from './stagger';
 import Loop from "./loop";
+import Burger from "./burger";
 
 export const selectorComponent = Component => {
      switch(Component) {
@@ -25,6 +26,8 @@ export const selectorComponent = Component => {
             return <Stagger/>
         case 'Loop':
             return <Loop/>
+        case 'Burger':
+            return <Burger/>
 
         default: return <Text>Something went wrong</Text>
      }
